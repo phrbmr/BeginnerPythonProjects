@@ -41,7 +41,7 @@ def computerGuess():
     elif feedback == 'l':
       low = guess + 1
     elif feedback != 'c':
-      print('Stop beaing silly!')       
+      return print('Stop being silly!')       
   
   print(f'Oh, computer bingo! {guess} is right.')
 

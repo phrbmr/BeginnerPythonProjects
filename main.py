@@ -3,5 +3,6 @@
 ##importing projects
 from simpleMadlib import madlib
 import guessNumber as gn
+import rockPaperScissors as rps
 
-gn.computerGuess()
+rps.play()
