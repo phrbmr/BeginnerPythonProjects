@@ -1,6 +1,7 @@
 import random
 import string
 import urllib.request, json 
+from hangman_visual import lives_visual_dict
 
 # import a list of words from the web
 
@@ -22,21 +23,52 @@ def get_valid_word(words):
 def hangman():
   '''
   A simple handman game.
+  Lives equals the number of letters in the word plus one.
   '''
   word = get_valid_word(words)  
   word_letters = set(word)       # letters in tahe word
   alphabet = set(string.ascii_uppercase)
   used_letters = set()           # what the user has guessed
 
-  user_guess = input('Guess a letter: ').upper()
-
-  if user_guess in alphabet - used_letters:
-    used_letters.remove(user_guess)
-    if user_guess in word_letters:
-      word_letters.remove(user_guess)
-
-  elif user_guess in used_letters:
-    print('Stop being silly, chose another letter!')
-  
+  #number of lives based on the lenght of the word
+  #visual based on the number of lives, but can´t be greater than 9
+  lives = len(word_letters) + 1
+  if lives > 9:
+    visual = 9
   else:
-    print("This is a dead parrot.")
+    visual = lives
+
+
+  #get user input
+  while len(word_letters) > 0 and lives > 0:
+    #informs used letters
+    print('You have', lives, 'lives left and you have used these letters: ', ', '.join(used_letters))  
+
+    #shows current state
+    word_list = [letter if letter in used_letters else '-' for letter in word]
+    print(lives_visual_dict[visual]) 
+    print('Keep guessing: ', ' '.join(word_list))
+
+    user_guess = input('\nGuess a letter: ').upper()
+    if user_guess in alphabet - used_letters:
+      used_letters.add(user_guess)
+      if user_guess in word_letters:
+        word_letters.remove(user_guess)
+      else:
+        lives -= 1
+        visual -= 1
+        print("\nYou're wrong.\n")
+
+    elif user_guess in used_letters:
+      print('\nStop being silly, chose another letter!\n')
+  
+    else:
+      print("\nThis is a dead parrot.\n")
+
+
+  #while ends if the player have guessed or lost all lives
+  if lives == 0:
+    print(lives_visual_dict[100])
+    print('Nobody expects the Spanish Inquisition! Ou chief wepons are surprise and', word)
+  else:
+    print("That´s right, you witch!")
