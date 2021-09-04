@@ -1,17 +1,17 @@
 # BeginnerPythonProjects
-12 Pojetos simples em Python do freeCodeCamp.org - desenvolvidos por Kylie Ying
+12 Beginner Python Projects based on the freeCodeCamp developed by Kylie Ying
 
-* **Projetos**
+* **Projects**
 
 1.  Madlibs
-2.  Advinhe o número - Computador
-3.  Advinhe o número - Usuário
-4.  Pedra, Papel e Tesoura
-5.  Forca
-6.  Jogo da Velha
-7.  Jogo da Velha AI
-8.  Busca Binária
-9.  Campo Minado
-10. Sudoku
-11. Manipulação de foto
-12. Cadeias de Markov
+2.  Guess the Number - Computer
+3.  Guesse the Number - User
+4.  Rock Paper Scissors
+5.  Hangman
+6.  Tic-Tac-Toe
+7.  Tic-Tac-Toe AI
+8.  Binary Search
+9.  Minesweeper
+10. Sudoku Solver
+11. Photo Manipulation
+12. Markov Chain Text Composer
