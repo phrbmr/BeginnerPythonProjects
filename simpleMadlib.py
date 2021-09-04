@@ -7,7 +7,7 @@
 
 def madlib ():
   """
-  A simples madlib game
+  A simple madlib game
   """
   famous_person = input("Famous person:")
   verb = input("Verb: ")

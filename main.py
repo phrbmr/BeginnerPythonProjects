@@ -1,6 +1,7 @@
 # Main project
 
 ##importing projects
-from madlib import madlib
+from simpleMadlib import madlib
+import guessNumber as gn
 
-madlib()
+gn.computerGuess()
