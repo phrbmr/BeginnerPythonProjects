@@ -28,7 +28,8 @@ def binary_search(l, target, low=None, high=None):
     return binary_search(l, target, midpoint+1, high)
 
 def search():
-  lenght = 1000
+  lenght = int(input('Choose the lenght of the list to compare the search time: '))
+  
   sorted_list = set()
   while len(sorted_list) < lenght:
     sorted_list.add(random.randint(-3*lenght, 3*lenght))
@@ -38,10 +39,10 @@ def search():
   for target in sorted_list:
     naive_search(sorted_list, target)
   end = time.time()
-  print("Naive Search Time: ", (end - start)/lenght, "seconds")
+  print("  Naive Search Time: ", (end - start)/lenght, "seconds")
 
   start = time.time()
   for target in sorted_list:
     binary_search(sorted_list, target)
   end = time.time()
-  print("Binary Search Time: ", (end - start)/lenght, "seconds")
+  print("  Binary Search Time: ", (end - start)/lenght, "seconds")

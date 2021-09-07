@@ -1,6 +1,6 @@
 import math
 import time
-from TTTplayer import HumanPlayer, RandomComputerPlayer, SmartComputerPlayer
+from ticTacToeModule.player import HumanPlayer, RandomComputerPlayer, SmartComputerPlayer
 
 class TicTacToe():
   def __init__(self):
@@ -101,8 +101,16 @@ def pcXpc():
 
 
 def velha():
+  '''
+  A simple Tic Tac Toe Game.
+  3 modes: 
+  - Against Random Computer
+  - Agains MinMax 
+  - Random X MinMAx
+  '''
+  print('\n|** A simple Tic Tac Toe game **|\n')
   #choose the opponent
-  dif = input('Set difficulty: \n 1- Kights Who Say "Ni"\n 2- The Killer Rabbit of Caerbannog\n 3- Let them play\n    ->')
+  dif = input('Set difficulty: \n 1- Kights Who Say "Ni"\n 2- The Killer Rabbit of Caerbannog\n 3- Let them play\n    -> ')
 
   #test to see the user response
   if dif not in ('1','2', '3'):

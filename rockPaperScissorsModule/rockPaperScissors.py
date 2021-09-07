@@ -8,11 +8,13 @@ def play():
   A simple Rock Paper Scissors game
   """
 
+  print('\n|** A simple Rock Paper Scissors game **|\n')
+  
   rps = {'r': 'rock', 'p': 'paper', 's': 'scissors'}  #creats a dict to better print
   user = input("Whats your choice?\n r for rock, p for paper and s for scissors\n")
   
   if user not in rps:                                 #cheking for the right input
-    return print('Stop being silly!')
+    return print('Stop being silly! The end...\n')
   
   computer = random.choice(['r', 'p', 's'])           #generating computer choice
 

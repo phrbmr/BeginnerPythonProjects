@@ -1,7 +1,7 @@
 import random
 import string
 import urllib.request, json 
-from hangman_visual import lives_visual_dict
+from hangmanModule.hangman_visual import lives_visual_dict
 
 # import a list of words from the web
 
@@ -22,9 +22,10 @@ def get_valid_word(words):
 # plays the game
 def hangman():
   '''
-  A simple handman game.
+  A simple hangman game.
   Lives equals the number of letters in the word plus one.
   '''
+  print('\n|** A simple Hangman game **|\n')
   word = get_valid_word(words)  
   word_letters = set(word)       # letters in tahe word
   alphabet = set(string.ascii_uppercase)
@@ -69,6 +70,6 @@ def hangman():
   #while ends if the player have guessed or lost all lives
   if lives == 0:
     print(lives_visual_dict[100])
-    print('Nobody expects the Spanish Inquisition! Ou chief wepons are surprise and', word)
+    print('Nobody expects the Spanish Inquisition! Our chief wepons are surprise and', word)
   else:
     print("That´s right, you witch!")
