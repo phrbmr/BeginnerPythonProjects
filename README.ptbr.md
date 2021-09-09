@@ -1,5 +1,5 @@
 # BeginnerPythonProjects
-12 Pojetos simples em Python baseados no curso do freeCodeCamp.org - desenvolvido por Kylie Ying
+12 Pojetos simples em Python baseados no curso do freeCodeCamp.org - desenvolvido por Kylie Ying - https://youtu.be/8ext9G7xspg
 
 * **Projetos**
 
