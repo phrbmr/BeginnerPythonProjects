@@ -1,5 +1,5 @@
 # Beginner Python Projects
-12 Beginner Python Projects based on the @freeCodeCamp developed by Kylie Ying (@kying18)
+12 Beginner Python Projects from @freeCodeCamp developed by Kylie Ying (@kying18) - https://youtu.be/8ext9G7xspg
 
 * **Projects**
 
