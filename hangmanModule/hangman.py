@@ -73,3 +73,6 @@ def hangman():
     print('Nobody expects the Spanish Inquisition! Our chief wepons are surprise and', word)
   else:
     print("That´s right, you witch!")
+
+if __name__ == '__main__':
+  hangman()

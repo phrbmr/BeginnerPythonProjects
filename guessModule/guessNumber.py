@@ -54,4 +54,5 @@ def guess():
   else:
     return print('Stop being silly! The end...\n')
 
-
+if __name__ == '__main__':
+  guess()

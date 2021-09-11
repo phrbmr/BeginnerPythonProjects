@@ -11,10 +11,11 @@ import ticTacToeModule.game as ttt
 import guessModule.guessNumber as gn
 import searchModule.search as sc
 import mineModule.minesweeper as ms
+import sudokuModule.sudokuSolver as ss
 
 
 
-menu = input('Choose your game:\n 1- Mad Libs\n 2- Guess the Number\n 3- Hangman\n 4- Rock Paper Scissors\n 5- Tic Tac Toe\n 6- Search\n 7- Minesweeper\n\n:>')
+menu = input('Choose your game:\n 1- Mad Libs\n 2- Guess the Number\n 3- Hangman\n 4- Rock Paper Scissors\n 5- Tic Tac Toe\n 6- Search\n 7- Minesweeper\n 8- Sudoku Solver\n\n:> ')
 if menu == '1':
   ml.madlib()
 elif menu == '2':
@@ -29,6 +30,8 @@ elif menu == '6':
   sc.search()
 elif menu == '7':
   ms.menu()  
+elif menu == '8':
+  ss.run()
 else:
   print ('Just a flesh wound!\n')
   print('''

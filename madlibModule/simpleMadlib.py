@@ -29,3 +29,6 @@ def madlib ():
   madlib = f"\nThis {animal} is no more! He has {verb[0]} to be! 'He's {adjective[0]} and gone to meet 'is {famous_person}! He's a {adjective[1]}! Bereft of life, 'e rests in {adjective[2]}! If you hadn't {verb[1]} 'im to the {sub[0]} he'd be {verb[2]} up the daisies! 'Is metabolic processes are now {adjective[3]}! 'E's off the {sub[1]}! He's kicked the {sub[2]}, he's shuffled off 'is mortal coil, run down the curtain and joined the bleedin' choir invisible!! THIS IS AN EX-{animal2}!!"
 
   print(madlib)
+
+if __name__ == '__main__': # good practice
+  madlib()

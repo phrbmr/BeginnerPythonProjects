@@ -33,3 +33,6 @@ def is_win(player, opponent):
   #helper function to check if the user have won
   if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponet == 'r'):
     return True
+
+if __name__ == '__main__': # good practice
+  play()

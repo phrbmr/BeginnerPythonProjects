@@ -46,3 +46,6 @@ def search():
     binary_search(sorted_list, target)
   end = time.time()
   print("  Binary Search Time: ", (end - start)/lenght, "seconds")
+
+if __name__ == '__main__': # good practice
+  search()
